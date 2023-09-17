@@ -2,33 +2,36 @@
 
 ## Author: (Sergio)
 
-**Description:** Cross Site Scripting vulnerability in CMSmadesimple v.2.2.18 allows a local attacker to execute arbitrary code via a crafted script to the Global Meatadata in the Settings- Global Settings Menu.
+**Description:** Cross Site Scripting vulnerability in CMSmadesimple v.2.2.18 allows a local attacker to execute arbitrary code via a crafted script to the Profiles in the Extensions - MicroTiny WYSIWYG editor.
 
-**Attack Vectors:** Scripting A vulnerability in the sanitization of the entry in the Global Meatadata of "Settings- Global Settings Menu" allows injecting JavaScript code that will be executed when the user accesses the web page.
+**Attack Vectors:** Scripting A vulnerability in the sanitization of the entry in the Profiles of "MicroTiny WYSIWYG editor" allows injecting JavaScript code that will be executed when the user accesses the web page.
 
 ---
 
 ### POC:
 
 
-When logging into the panel, we will go to the "Settings- Global Settings Menu." section off General Menu.
+When logging into the panel, we will go to the "Extensions- MicroTiny WYSIWYG editor." section off General Menu.
 
-![XSS Global Metadata](https://github.com/sromanhu/CMSmadesimple-Stored-XSS---Global-Settings/assets/87250597/243e7d1f-2bca-4acc-994a-63f926403700)
+![XSS Microtiny](https://github.com/sromanhu/CMSmadesimple-Stored-XSS---MicroTIny-extension/assets/87250597/9831c250-c4d9-4bb3-8b30-3ee221bc48b4)
 
 
 
-We edit that Global Settings Menu that we have created and see that we can inject arbitrary Javascript code in the Global Meatadata field.
+
+We edit that MicroTiny WYSIWYG edito Menu with the payload that we have created and see that we can inject arbitrary Javascript code in the Profile field.
 
 
 ### XSS Payload:
 
 ```js
-<img src=1 onerror=alert("1")
+""><svg/onload=alert('Profile')>
 ```
 
 
 In the following image you can see the embedded code that executes the payload in the main web.
-![XSS Global Metadata resultado](https://github.com/sromanhu/CMSmadesimple-Stored-XSS---Global-Settings/assets/87250597/ca7fd137-6975-4826-b1be-8dce3970ebee)
+![XSS resultado](https://github.com/sromanhu/CMSmadesimple-Stored-XSS---MicroTIny-extension/assets/87250597/99636315-3f3e-4b64-b24b-2f8dd2b3dd9c)
+
+
 
 
 
