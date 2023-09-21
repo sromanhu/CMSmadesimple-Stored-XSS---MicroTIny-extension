@@ -13,7 +13,8 @@
 
 When logging into the panel, we will go to the "Extensions- MicroTiny WYSIWYG editor." section off General Menu.
 
-![XSS Microtiny](https://github.com/sromanhu/CMSmadesimple-Stored-XSS---MicroTIny-extension/assets/87250597/9831c250-c4d9-4bb3-8b30-3ee221bc48b4)
+![XSS Microtiny](https://github.com/sromanhu/CMSmadesimple-Stored-XSS---MicroTIny-extension/assets/87250597/aadc3194-1f5b-420f-acdb-01161623bf94)
+
 
 
 
@@ -29,7 +30,8 @@ We edit that MicroTiny WYSIWYG edito Menu with the payload that we have created 
 
 
 In the following image you can see the embedded code that executes the payload in the main web.
-![XSS resultado](https://github.com/sromanhu/CMSmadesimple-Stored-XSS---MicroTIny-extension/assets/87250597/99636315-3f3e-4b64-b24b-2f8dd2b3dd9c)
+![XSS resultado](https://github.com/sromanhu/CMSmadesimple-Stored-XSS---MicroTIny-extension/assets/87250597/584720d6-dc91-44f4-beb3-b5b805ede4a3)
+
 
 
 
